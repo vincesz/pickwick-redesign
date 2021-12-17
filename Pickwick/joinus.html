@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="joinusstyle.css">
+    <link rel="stylesheet" href="MikkelScript-Bold.ttf">
+    <link rel="stylesheet" href="Helvetica.ttf">
+    <title>Pickwick</title>
+    <meta name="description" content="Pickwick tea is the start you need every morning
+    to survive the day. With our rich selection of teas you will surely find the one that's for you!">
+</head>
+<body>
+    <header>
+            <a href="index.html"><img id="pickwick-logo" src="images/wicklogogreen.png" alt="PickWick Logo"></a>
+            <a href="menu.html"><img id="burger-menu" src="images/burgerbrown.png" alt="Burger Menu"></a>
+            <div id="menu-nav">
+                <a class="menunav" href="index.html"><h3 class="menunav">Home</h3></a>
+                <a class="menunav" href="products.html"><h3 class="menunav">Products</h3></a>
+                <a class="menunav" href="inspiration.html"><h3 class="menunav">Inspiration</h3></a>
+                <a class="menunav" href="sustainability.html"><h3 class="menunav">Sustainability</h3></a>
+                <a class="menunav" href="contactpage.html"><h3 class="menunav">Contact</h3></a>
+                <a class="menunav" href="inspiration.html"><img src="images/joinus.png" alt="Join us"></a>
+            </div>
+    </header>
+    <section id="header-desktop">
+        <a href="index.html"><img id="pickwick-logo" src="images/wicklogo3.png" alt="Pickwick Logo"></a>
+            <div id="menu-nav">
+                <a class="menunav" href="index.html"><h3 class="menunav">Home</h3></a>
+                <a class="menunav" href="products.html"><h3 class="menunav">Products</h3></a>
+                <a class="menunav" href="inspiration.html"><h3 class="menunav">Inspiration</h3></a>
+                <a class="menunav" href="sustainability.html"><h3 class="menunav">Sustainability</h3></a>
+                <a class="menunav" href="contactpage.html"><h3 class="menunav">Contact</h3></a>
+                <a class="menunav" href="inspiration.html"><img src="images/joinus.png" alt="Join us"></a>
+            </div>
+    </section>
+    <main>
+        <style>
+            body {font-family: "Helvetica"}
+            form {margin-top: 70px;}
+            h2 {margin-top: 100px;}
+            
+            input[type=text], input[type=password] {
+              width: 50%;
+              padding: 12px 20px;
+              margin: 8px 0;
+              display: inline-block;
+              border: 1px solid #ccc;
+              box-sizing: border-box;
+            }
+            
+            button {
+              background-color: #ffffffc0;
+              color: black;
+              font-family: "Helvetica";
+              padding: 14px 20px;
+              margin: 8px 0;
+              border: none;
+              cursor: pointer;
+              width: 50%;
+            }
+            
+            button:hover {
+              opacity: 0.8;
+            }
+            
+            .cancelbtn {
+              width: auto;
+              padding: 10px 18px;
+              background-color: #f44336;
+            }
+            
+            
+            .containerlogin {
+              width: 50%;
+              margin-left: auto;
+              margin-right: auto;
+            }
+            
+            span.psw {
+              margin-top: 40px;
+              padding-top: 16px;
+
+            }
+
+            
+            /* Change styles for span and cancel button on extra small screens */
+            @media screen and (max-width: 426px) {
+              span.psw {
+                 display: block;
+                 float: none;
+              }
+              .cancelbtn {
+                 width: 100%;
+              }
+              .containerlogin {
+                  width: 100%;
+              }
+              input {
+                  width: 100%;
+              }
+            }
+            </style>
+            
+            <h2>Tea Club Login</h2>
+            <p style="margin-top: 40px;">Login to access thousands of new recipes and read interesting community posts.</p>
+            <p>If you don't have an account click <a href="#">here to register</a> </p>
+            
+            <form action="/action_page.php" method="post">
+            
+              <div class="containerlogin">
+                <input type="text" placeholder="Username" name="uname" required>
+            
+                
+                <input type="password" placeholder="Password" name="psw" required>
+                    
+                <button type="submit">Login</button>
+                
+              </div>
+            
+              <div class="containerlogin" style="font-family: Helvetica;">
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+            </form>
+            
+    </main>
+
+</body>
+</html>

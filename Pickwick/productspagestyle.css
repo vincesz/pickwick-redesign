@@ -1,0 +1,317 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+
+
+@font-face {
+    font-family: "MikkelScript-Bold";
+    src: url("MikkelScript-Bold.ttf");
+}
+    
+@font-face {
+    font-family: "Helvetica";
+    src: url("Helvetica.ttf");
+}
+
+
+
+header {
+    background-color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	overflow-y: hidden;
+}
+img#pickwick-logo {
+    width: 90px;
+    display: flex;
+    float: left;
+    margin-left: 10px;
+}
+img#burger-menu {
+    width: 50px;
+    height: 50px;
+    display: block;
+    float: right;
+    margin-right: 10px;
+}
+#menu-nav {
+	display: flex;
+	justify-content: space-between;
+	float: right;
+	margin-right: 3vw;
+	display: none;
+}
+.menunav {
+	color: rgb(75, 150, 24);
+	text-decoration: none;
+	margin: 5px;
+	font-family: Helvetica;
+}
+
+
+/*main starts*/
+
+
+section#contactus{
+    text-align: center;
+    color:black;
+    margin-top: 15px;
+    font-family:"MikkelScript-Bold";
+    font-size: 36px;
+}
+
+.click {
+    font-family: "MikkelScript-Bold";
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.click a {
+    text-decoration: none;
+    color: black;
+}
+
+section#contact{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: black;
+    font-family: "Helvetica";
+    
+
+
+    
+}
+
+.ember {
+    font-size: 50px;
+    font-family: "MikkelScript-Bold";
+}
+
+.artic {
+    font-size: 23px;
+    margin-bottom: 30px;
+}
+
+section.infoblock{
+    padding-top: 15px;
+    padding-bottom: 30px;
+    text-align: center;
+    margin: auto;
+    
+}
+
+section.infoblock>img{
+    
+    margin-bottom: 10px;
+}
+
+section.infoblock>h3{
+    margin-bottom: 10px;
+    font-family: "MikkelScript-Bold";
+    font-size: 34px;
+
+}
+
+section.infoblock>p{
+    font-family: "Helvetica";
+    margin-bottom: 15px;
+}
+
+
+/*footer starts*/
+footer {
+    background-color: rgb(80, 189, 129);
+    color: white;
+    display: flex;
+    font-size: 10px;
+	font-family: "Helvetica";
+}
+section#footer {
+	margin: auto;
+	display: flex;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	justify-content: space-between;
+}
+section#left {
+	margin-top: 10px;
+	margin-left: 20px;
+	float: left;
+	max-width: 200px;
+}
+section#right {
+	margin-top: 10px;
+	float: right;
+	margin-left: -20px;
+}
+section#logos {
+    padding: 45.5px 10px;
+    align-items: center;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	margin-right: 10px;
+	margin-left: 10px;
+    
+}
+#ig {
+    min-width: 30px;
+    height: 30px;
+    
+}
+#fb {
+    height: 30px;
+	min-width: 15px;
+    margin-left: 6px;
+}
+
+/*Laptop*/
+@media only screen and (min-width: 426px) {
+    img#pickwick-logo {
+		margin-left: 3vw;
+	}
+	img#burger-menu {
+		display: none;
+	}
+	#menu-nav {
+		display: flex;
+	}
+    section#contactus {
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+	section#footer {
+		font-size: 15px;
+		padding: 10px;
+		padding-bottom: 15px;
+	}
+	section#left {
+		margin-right: 8vw;
+	}
+	section#logos {
+		margin-left: 5vw;
+	}
+
+    section#contact{
+        flex-direction: row;
+        margin: auto;
+        max-width: 1200px;
+    }
+    section#map{
+        margin: auto;
+    }
+   
+    .container1 {
+        display: block;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .container { 
+        
+        width: 750px; 
+        margin-bottom: 50px;
+        text-align: right;
+        display: block;
+        justify-content: center;
+        font-family: "Helvetica";
+     }
+    .outer-container{
+        display: flex;  
+        flex-direction: row;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 45px;
+    }
+    
+    .container2 {
+        
+        margin-left: 40px; 
+        width: 750px; 
+        font-family: "Helvetica";
+    }
+    
+
+}
+
+@media only screen and (max-width: 426px) {
+    .ember {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .artic {
+        font-family: "Helvetica";
+        width: 80%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+    }
+
+    .container > p {
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+
+    .container > a > img{
+        display: block;
+        justify-content: center;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        display: flex;
+    }
+
+    .outer-container {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container2 > img {
+        justify-content: center;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        display: flex;
+    }
+
+    .container2 a img {
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section.infoblock>p {
+        font-size: 18px;
+    }
+
+    .midmid {
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        margin-top: 30px;
+    }
+    
+}
